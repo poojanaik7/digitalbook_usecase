@@ -1,6 +1,7 @@
 package com.digitalbooks.controller;
 
 import com.digitalbooks.exception.DigitalBookException;
+import com.digitalbooks.exception.ResultNotFoundException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -22,5 +23,10 @@ public class BaseControllerTest {
     @Test
     public void handleExceptionTest() {
         baseController.handleException(new DigitalBookException("Something went wrong please try again later"));
+    }
+
+    @Test
+    public void handleResultNotFoundExceptionTest(){
+        baseController.handleResultNotFoundException(new ResultNotFoundException("SQL Exception"));
     }
 }
