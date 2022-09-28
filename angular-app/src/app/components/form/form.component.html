@@ -1,0 +1,17 @@
+<p>Form Component Works!</p>
+<div class="container">
+    <label>Firstname:</label>
+    <input type="text" id="firstname" [(ngModel)]="user.firstname" placeholder="Enter Firstname">
+
+    <label>Lastname:</label>
+    <input type="text" id="lastname" [(ngModel)]="user.lastname" placeholder="Enter Lastname">
+
+    <label>Email:</label>
+    <input type="email" id="email" [(ngModel)]="user.email" placeholder="Enter Email">
+
+</div>
+
+
+<button type="button" (click)="save()">Submit</button><br><br>
+
+

@@ -1,0 +1,30 @@
+<div class="form-group row">
+    <label>Title</label>
+    <div class="form-group col-md-4">
+       
+        <input type="text"  class="form-control" [(ngModel)]="b.title" id="title" placeholder="Enter Title">
+    </div>
+</div>
+<div class="form-group row">
+    <label>Author</label>
+    <div class="form-group col-md-4">
+      
+        <input type="text"  class="form-control" [(ngModel)]="b.author" id="author" placeholder="Enter Author">
+    </div>
+</div>
+<div class="form-group row">
+    <label>Publisher</label>
+    <div class="form-group col-md-4">
+       
+        <input type="text"  class="form-control" [(ngModel)]="b.publisher" id="publisher" placeholder="Enter Publisher">
+    </div>
+</div>
+<div class="form-group row">
+    <label>Release Date</label>
+    <div class="form-group col-md-4">
+       
+        <input type="text"  class="form-control" [(ngModel)]="b.releaseDate" id="releaseDate" placeholder="Enter Release Date">
+    </div>
+</div>
+<button class='btn btn-primary' (click)="searchBook()">Search</button>
+<router-outlet></router-outlet>

@@ -1,0 +1,26 @@
+<p>bookform works!</p>
+<label>Title</label>
+<input type="text" id="title" [(ngModel)]="book.response.title" placeholder="Enter Title">
+<br>
+<label>Publisher</label>
+<input type="text" id="publisher" [(ngModel)]="book.response.publisher" placeholder="Enter Publisher">
+<br>
+<label>Release Date</label>
+<input type="text" id="releaseDate" [(ngModel)]="book.response.releaseDate" placeholder="Enter Release Date">
+<br>
+<label>Category</label>
+<input type="text" id="category" [(ngModel)]="book.response.category" placeholder="Enter Category">
+<br>
+<label>Price</label>
+<input type="text" id="price" [(ngModel)]="book.response.price" placeholder="Enter Price">
+<br>
+<label>Author</label>
+<input type="text" id="author" [(ngModel)]="book.response.author" placeholder="Enter Author">
+<br>
+<label>Content</label>
+<input type="text" id="content" [(ngModel)]="book.response.content" placeholder="Enter Content">
+<br>
+<label>Active/Inactive</label>
+<input type="text" id="active" [(ngModel)]="book.response.active" placeholder="Active/Inactive">
+<br>
+<button class='btn btn-primary' (click)='save()'>save</button>
