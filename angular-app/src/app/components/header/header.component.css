@@ -1,2 +1,44 @@
 :host {
-color:darkred}
+color:rgba(214, 11, 72, 0.815)}
+
+.app-header{
+    color: #fff;
+    background-color: #e9801e;
+    padding: 1%;
+    -webkit-box-shadow: 2px 4px 58px -20px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 4px 58px -20px rgba(0,0,0,1);
+    box-shadow: 2px 4px 58px -20px rgba(0,0,0,1);
+}
+
+ .a{
+    margin-left: 100px;
+ }
+
+ .navbar {
+    background-color: rgb(233, 230, 190);
+    color: rgb(158, 15, 15);
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+ }
+
+ .topnav {
+   float: right;
+   overflow: hidden;
+}
+ .bs-example{
+   text-align: left;
+}
+
+ .li{
+   text-align: center;
+   height: 34px;
+}
+
+ .logo-image{
+    width: 46px;
+    height: 34px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+    background-color:brown
+}

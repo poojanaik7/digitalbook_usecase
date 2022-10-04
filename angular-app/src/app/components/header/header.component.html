@@ -1,13 +1,34 @@
-<h4>Digital Book</h4>
-<!-- <nav >
-    <a routerLink=''>Home</a>
-    <pre><a routerLink='signup'>Sign Up</a>  <a routerLink='signin'>Sign In</a> </pre><br>
-    <a routerLink='search'>Search Book</a>
+<nav class="navbar navbar-inverse">
+    <ul class="nav justify-content-end">
+       
+    <a class="navbar-brand" href="/search">
     
-</nav> -->
+        <div class="logo-image">
+            <img src="https://www.kindpng.com/picc/m/558-5588057_icon-school-book-graphic-design-hd-png-download.png"
+                class="img-fluid">
+            <!-- //  <img src="https://www.eatlogos.com/education_logos/png/m-letter-with-book-logo-design.png" class="img-fluid"> -->
+        </div>
+    </a>
+      
+        
+    <h1><b>Digital Book</b></h1>
+</ul>
 
-<nav class="nav nav-pills flex-column flex-sm-row">
-    <a class="flex-sm-fill text-sm-center nav-link active" routerLink='search'>Home</a>
-    <a class="flex-sm-fill text-sm-center nav-link " routerLink='signup'>Sign Up</a>
-    <a class="flex-sm-fill text-sm-center nav-link " routerLink='signin'>Sign In</a>
+
+    <ul class="nav justify-content-end">
+
+        <li *ngIf="!isLoggedIn()" ngclass="nav-item">
+            <a class="btn btn-secondary" routerLink="signup">Signup</a>
+        </li>
+        <pre> </pre>
+        <li *ngIf="!isLoggedIn()" class="nav-item">
+            <a class="btn btn-secondary" routerLink="signin">Signin</a>
+        </li>
+        <li *ngIf="isLoggedIn()" class="nav-item">
+            <a class="btn btn-secondary" routerLink="books">All My Books</a>
+        </li>
+        <li *ngIf="isLoggedIn()" class="nav-item">
+            <a class="btn btn-secondary" (click)="logout()">Logout</a>
+        </li>
+    </ul>
 </nav>
